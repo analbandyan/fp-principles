@@ -17,21 +17,26 @@ public class DemoDisciplinedState {
         printDataAndNewLine(list); //this and any other function cannot mutate the list
 
         var result1 = addElements(list);
-        printDataAndNewLine(result1);
+        print("list = ", list);
+        printDataAndNewLine("result1 = ", result1);
 
         var result2 = addElements(result1);
-        printDataAndNewLine(result2);
+        print("result1 = ", result1);
+        printDataAndNewLine("result2 = ", result2);
 
         var result3 = removeEvenElements(result2);
-        printDataAndNewLine(result3);
+        print("result2 = ", result2);
+        printDataAndNewLine("result3 = ", result3);
 
         var result4 = doubleElementValues(result3);
-        printDataAndNewLine(result4);
+        print("result3 = ", result3);
+        printDataAndNewLine("result4 = ", result4);
 
         var result5 = complexOp(result4);
-        printDataAndNewLine(result5);
+        print("result4 = ", result4);
+        printDataAndNewLine("result5 = ", result5);
 
-        printDataAndNewLine(list); // still the same
+        printDataAndNewLine("list = ", list); // still the same
     }
 
     private static List<Integer> addElements(List<Integer> list) {

@@ -26,7 +26,15 @@ public class BasicGenericFunctions {
         print(obj + "\n\n");
     }
 
+    public static void printDataAndNewLine(String prefix, Object obj) {
+        print(prefix, obj + "\n\n");
+    }
+
     public static void print(Object obj) {
         System.out.println(obj);
+    }
+
+    public static void print(String prefix, Object obj) {
+        System.out.println(prefix + obj);
     }
 }
