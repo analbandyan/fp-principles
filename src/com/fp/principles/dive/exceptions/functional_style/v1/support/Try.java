@@ -1,4 +1,4 @@
-package com.fp.principles.dive.exceptions.triable.v1.support;
+package com.fp.principles.dive.exceptions.functional_style.v1.support;
 
 import java.util.function.Consumer;
 import java.util.function.Function;

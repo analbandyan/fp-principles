@@ -1,10 +1,10 @@
-package com.fp.principles.dive.exceptions.triable.v2;
+package com.fp.principles.dive.exceptions.functional_style.v2;
 
-import com.fp.principles.dive.exceptions.triable.v2.support.Function;
+import com.fp.principles.dive.exceptions.functional_style.v2.support.Function;
 
 import java.util.Optional;
 
-public class ExceptionProneTriableV2 {
+public class ExceptionProneFunctionalV2 {
 
     public static Function<String, Integer> plusOne() {
         return Function.<String>identity()

@@ -1,4 +1,4 @@
-package com.fp.principles.dive.exceptions.triable.v2.support;
+package com.fp.principles.dive.exceptions.functional_style.v2.support;
 
 import java.util.Objects;
 import java.util.Optional;

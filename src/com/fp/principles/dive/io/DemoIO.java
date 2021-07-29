@@ -35,12 +35,12 @@ public class DemoIO {
         action9.apply(null);//action9 is recipe which is getting executed/performed
 
         //applying a "syntactic sugar"
-        Runnable action10 = IOv10.convertToCelsius();
-        action10.run();
+        Runnable program10 = IOv10.convertToCelsius();
+        program10.run();
 
         //provide IO as an argument
-        Runnable program = IOv11.convertToCelsius(IO_INPUT, IO_OUTPUT);
-        program.run();
+        Runnable program11 = IOv11.convertToCelsius(IO_INPUT, IO_OUTPUT);
+        program11.run();
     }
 
 }

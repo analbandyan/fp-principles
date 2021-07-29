@@ -1,12 +1,11 @@
-package com.fp.principles.dive.exceptions.triable.v1;
+package com.fp.principles.dive.exceptions.functional_style.v1;
 
-import com.fp.principles.dive.exceptions.triable.v1.support.Try;
+import com.fp.principles.dive.exceptions.functional_style.v1.support.Try;
 
-import java.util.Optional;
 import java.util.function.Consumer;
 import java.util.function.Function;
 
-public class ExceptionProneTriableV1 {
+public class ExceptionProneFunctionalV1 {
 
     public static Consumer<String> convertToNumber() {
         return Try.of(toInteger())

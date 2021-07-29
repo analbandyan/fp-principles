@@ -1,8 +1,8 @@
-package com.fp.principles.dive.exceptions.raw;
+package com.fp.principles.dive.exceptions.non_functional_style;
 
 import java.util.function.Function;
 
-public class ExceptionProneRaw {
+public class ExceptionProneNonFunctional {
 
     public static Function<String, Integer> plusOne() {
         return Function.<String>identity()
