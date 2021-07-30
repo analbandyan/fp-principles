@@ -33,11 +33,11 @@ public class Try<T, R> {
         return (t) -> {
             try {
                 R result = fn.apply(t);
-                if(successHandler != null) {
+                if (successHandler != null) {
                     successHandler.accept(result);
                 }
             } catch (Exception ex) {
-                if(failureHandler != null) {
+                if (failureHandler != null) {
                     failureHandler.accept(ex);
                 } else {
                     throw ex;

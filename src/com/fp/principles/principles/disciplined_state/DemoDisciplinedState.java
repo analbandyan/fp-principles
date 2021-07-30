@@ -1,13 +1,13 @@
 package com.fp.principles.principles.disciplined_state;
 
-import com.fp.principles.principles.BasicGenericFunctions;
+import com.fp.principles.principles.GenericFunctions;
 
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-import static com.fp.principles.principles.BasicGenericFunctions.*;
+import static com.fp.principles.principles.GenericFunctions.*;
 
 public class DemoDisciplinedState {
 
@@ -53,7 +53,7 @@ public class DemoDisciplinedState {
     private static List<Integer> removeEvenElements(List<Integer> list) {
         print("removeEvenElements");
         return list.stream()
-                .filter(BasicGenericFunctions::isOdd)
+                .filter(GenericFunctions::isOdd)
                 .collect(Collectors.toUnmodifiableList());
     }
 

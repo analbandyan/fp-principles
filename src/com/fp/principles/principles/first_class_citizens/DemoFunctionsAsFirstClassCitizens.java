@@ -1,16 +1,16 @@
-package com.fp.principles.principles;
+package com.fp.principles.principles.first_class_citizens;
 
 import java.util.List;
 import java.util.Optional;
 import java.util.function.Function;
 
-import static com.fp.principles.principles.BasicGenericFunctions.print;
+import static com.fp.principles.principles.GenericFunctions.print;
 
-public class DemoFunctionsAsFirstClassEntities {
+public class DemoFunctionsAsFirstClassCitizens {
 
     public static void main(String[] args) {
         //assignment to variable
-        Function<Integer, Integer> f = DemoFunctionsAsFirstClassEntities::square;
+        Function<Integer, Integer> f = DemoFunctionsAsFirstClassCitizens::square;
         print(f);
 
         //call through assigned variable
@@ -22,7 +22,7 @@ public class DemoFunctionsAsFirstClassEntities {
         print(result2);
 
         //pass function reference to other function
-        Integer result3 = Optional.of(2).map(DemoFunctionsAsFirstClassEntities::square).get(); //result3 = 4
+        Integer result3 = Optional.of(2).map(DemoFunctionsAsFirstClassCitizens::square).get(); //result3 = 4
         print(result3);
 
 
@@ -36,13 +36,13 @@ public class DemoFunctionsAsFirstClassEntities {
 
 
         //store functions in a data structure
-        List<Function<Integer, Integer>> functions = List.of(DemoFunctionsAsFirstClassEntities::square, getSquareFunction());
+        List<Function<Integer, Integer>> functions = List.of(DemoFunctionsAsFirstClassCitizens::square, getSquareFunction());
         print(functions);
     }
 
     //get the function as a result of other function call
     static Function<Integer, Integer> getSquareFunction() {
-        return DemoFunctionsAsFirstClassEntities::square;
+        return DemoFunctionsAsFirstClassCitizens::square;
     }
 
     static Integer square(Integer i) {

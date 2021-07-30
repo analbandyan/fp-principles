@@ -1,4 +1,4 @@
-package com.fp.principles.principles;
+package com.fp.principles.principles.type_systems;
 
 public class DemoTypeSystems {
 

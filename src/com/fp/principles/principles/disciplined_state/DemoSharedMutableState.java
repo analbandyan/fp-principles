@@ -1,12 +1,12 @@
 package com.fp.principles.principles.disciplined_state;
 
-import com.fp.principles.principles.BasicGenericFunctions;
+import com.fp.principles.principles.GenericFunctions;
 
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-import static com.fp.principles.principles.BasicGenericFunctions.*;
+import static com.fp.principles.principles.GenericFunctions.*;
 
 public class DemoSharedMutableState {
 
@@ -42,7 +42,7 @@ public class DemoSharedMutableState {
 
     private static void removeEvenElements() {
         print("removeEvenElements");
-        SharedMutableState.getList().removeIf(BasicGenericFunctions::isEven);
+        SharedMutableState.getList().removeIf(GenericFunctions::isEven);
     }
 
     private static void refreshElements() {

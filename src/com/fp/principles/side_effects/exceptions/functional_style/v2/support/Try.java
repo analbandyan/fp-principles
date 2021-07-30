@@ -6,7 +6,7 @@ import java.util.Optional;
 public class Try<T, R> {
 
     private final Function<T, R> fn;
-    
+
     private Function<Exception, Optional<R>> onFailure;
 
     private Try(Function<T, R> fn) {

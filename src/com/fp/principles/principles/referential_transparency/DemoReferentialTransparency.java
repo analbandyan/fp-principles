@@ -1,6 +1,6 @@
-package com.fp.principles.principles;
+package com.fp.principles.principles.referential_transparency;
 
-import static com.fp.principles.principles.BasicGenericFunctions.print;
+import static com.fp.principles.principles.GenericFunctions.print;
 
 public class DemoReferentialTransparency {
 

@@ -2,8 +2,8 @@ package com.fp.principles.principles.pure_functions;
 
 import java.util.stream.IntStream;
 
-import static com.fp.principles.principles.BasicGenericFunctions.print;
-import static com.fp.principles.principles.BasicGenericFunctions.printNewLineAndData;
+import static com.fp.principles.principles.GenericFunctions.print;
+import static com.fp.principles.principles.GenericFunctions.printNewLineAndData;
 
 public class DemoPureFunctions {
 

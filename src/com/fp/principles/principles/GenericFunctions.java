@@ -2,7 +2,7 @@ package com.fp.principles.principles;
 
 import java.util.Random;
 
-public class BasicGenericFunctions {
+public class GenericFunctions {
 
     private static final Random random = new Random();
 

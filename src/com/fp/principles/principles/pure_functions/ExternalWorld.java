@@ -2,7 +2,7 @@ package com.fp.principles.principles.pure_functions;
 
 import java.util.Random;
 
-import static com.fp.principles.principles.BasicGenericFunctions.print;
+import static com.fp.principles.principles.GenericFunctions.print;
 
 public class ExternalWorld {
 
