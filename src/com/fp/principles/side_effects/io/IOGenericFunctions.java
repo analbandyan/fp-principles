@@ -22,7 +22,7 @@ public class IOGenericFunctions {
         try {
             return reader.readLine();
         } catch (IOException e) {
-            //NOT GOOD - will come to this in "exceptions" section
+            //NOT GOOD - will discuss this in "exceptions" section
             throw new RuntimeException(e);
         }
     }

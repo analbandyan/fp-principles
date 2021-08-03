@@ -46,6 +46,8 @@ public class DemoImmutability {
 //        immutable.setJ(); //compile error - no setter available
 //        immutable.setList(); //compile error - no setter available
 
+//        immutable.getList().add(4); //UnsupportedOperationException (list is unmodifiable)
+
         list.add(4);
         print(immutable);
 

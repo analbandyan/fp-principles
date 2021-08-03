@@ -14,7 +14,9 @@ public class DemoDisciplinedState {
     public static void main(String[] args) {
         var list = List.of(1, 2, 3); // unmodifiable list
 
-        printDataAndNewLine(list); //this and any other function cannot mutate the list
+        //this and any other function cannot mutate the list
+        //if the function may anyway change the list, pass the copy of the list
+        printDataAndNewLine(list);
 
         var result1 = addElements(list);
         print("list = ", list);

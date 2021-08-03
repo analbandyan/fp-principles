@@ -10,7 +10,7 @@ public class IOv5 {
     //PURE FUNCTION
     public static Function<Void, Void> convertToCelsius() {
         Function<Void, Void> action1 = println("Enter the temperature in fahrenheit degrees:");
-        double celsius = fahrenheitToCelsius(80);//not a real input
+        double celsius = fahrenheitToCelsius(80);// <--- not a real input
         Function<Void, Void> action2 = println(celsiusMessage(celsius));
         Function<Void, Void> action = action1.andThen(action2);//composition
         return action;

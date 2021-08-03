@@ -26,7 +26,6 @@ public class IOv4 {
     //PURE FUNCTION
     //instead of actually doing the side effect, it is just returning an action that
     //when interpreted, will produce the side effect!
-    //Runnable is just a description of operation here!
     private static Function<Void, Void> println(String message) {
         return (v) -> {
             out.println(message);

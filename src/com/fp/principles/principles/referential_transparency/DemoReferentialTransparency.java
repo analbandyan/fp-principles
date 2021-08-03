@@ -9,13 +9,13 @@ public class DemoReferentialTransparency {
         print(four1);
 
         int four2 = two() + 2; //4
-        print(four1);
+        print(four2);
 
         int four3 = 2 + two(); //4
-        print(four1);
+        print(four3);
 
         int four4 = 2 + 2; //4
-        print(four1);
+        print(four4);
     }
 
     static int two() {
