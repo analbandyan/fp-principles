@@ -1,6 +1,7 @@
 package com.fp.principles.other.memoization
 
 import groovy.transform.CompileStatic
+import groovy.transform.Memoized
 import groovy.transform.TypeChecked
 
 @CompileStatic
@@ -13,7 +14,7 @@ class MemoizationDemo {
         println factorial(5)
     }
 
-//    @Memoized
+    @Memoized
     private static long factorial(long num) {
         println "Factorial for $num"
 
